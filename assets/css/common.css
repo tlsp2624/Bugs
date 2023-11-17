@@ -1,0 +1,173 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.inner {
+  position: relative;
+  max-width: 1580px;
+  min-width: 940px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 42px 40px 30px;
+}
+
+.headline {
+  padding-right: 5px;
+  padding-left: 6px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.header .menu-list .theme span,
+.header .menu-list .bugstv span,
+.header .menu-list .mymusic span,
+.header .myalbum .title-text {
+  position: relative;
+  display: block;
+  padding: 0 0 0 32px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #A3A3A3;
+  line-height: 28px;
+}
+
+/* swiper pagination */
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #bbc1c3;
+  opacity: 1;
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  width: 0;
+  height: 0;
+  background: none;
+  border-radius: 0;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 7px solid #ff5546;
+}
+
+
+/* 스프라이트 이미지 */
+.header .group-top .web-item a::before,
+.header .link-box .comico,
+.header .link-box .ticket,
+.header .link-box .hangame,
+.header .search-wrap .input::before,
+.header .search-wrap .btn-search,
+.header .login-wrap .btn-notice,
+.header .mbs-wrap .link-mbs::before,
+.header .menu-list .chart a,
+.header .menu-list .news a,
+.header .menu-list .fouru a,
+.header .menu-list .genre a,
+.header .menu-list .musicpost a,
+.header .menu-list .theme span,
+.header .menu-list .connect a,
+.header .menu-list .radio a,
+.header .menu-list .bugstv span,
+.header .menu-list .mymusic span,
+.footer .sns a,
+.top .btn-top,
+.sc-chart .add-all button:nth-child(1)::before,
+.sc-chart .add-all button:nth-child(2)::before,
+.sc-chart .add-all button:nth-child(3)::before,
+.sc-banner .btn-autoplay::before {
+  background-image: url(//file.bugsm.co.kr/wbugs/sprite/pc/sprite_pc_wbugs@20221122.png?_t_s_=20231004-2243);
+}
+
+
+/* 화살표 */
+.header .menu-list .arrow span::after,
+.link-detail::before,
+.footer .site-box .btn-site::after,
+.header .utill-box .btn-game::after,
+.add-wrap .share::after {
+  background-image: url(//file.bugsm.co.kr/wbugs/sprite/pc/sprite_pc_arrow@20220127.png?_t_s_=20231006-0946);
+}
+
+/* 라벨, 버튼 */
+.thumb-box .btn-play,
+.btn-down::before,
+.sc-chart .button-box .play,
+.sc-video .text-box .badge,
+.sc-story .bottom-wrap .time::before,
+.sc-story .bottom-wrap .comment::before,
+.sc-story .bottom-wrap .watch::before,
+.add-wrap .sub-list li a::before,
+.sc-chart .button-box .btn,
+#recency4 .play,
+#recency4 .add {
+  background-image: url(//file.bugsm.co.kr/wbugs/sprite/pc/sprite_pc_list@20200227.png?_t_s_=20231006-1143);
+}
+
+/* 플레이 버튼 */
+.thumb-box .btn-play {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  background-position: -135px -30px;
+  z-index: 2;
+}
+
+.thumb-box .btn-play:hover {
+  background-position: -135px -59px;
+}
+
+/* 더보기 화살표 */
+.link-detail {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  padding-right: 10px;
+  font-size: 13px;
+  color: #757271;
+}
+
+.link-detail::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  margin-top: -1px;
+  height: 7px;
+  width: 5px;
+  background-position: -47px -22px;
+  transform: translate(0, -54%);
+}
+
+/* 메뉴버튼 */
+.btn-down {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+}
+
+.btn-down::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2px;
+  margin-top: -9px;
+  width: 3px;
+  height: 17px;
+  background-position: -259px -209px;
+}

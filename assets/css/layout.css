@@ -1,0 +1,836 @@
+@import './fonts.css';
+@import './reset.css';
+@import './common.css';
+
+.header {
+  width: 100%;
+  min-width: 960px;
+}
+
+.header .group-top {
+  position: fixed;
+  width: 100%;
+  height: 118px;
+  z-index: 10;
+  border-bottom: 1px solid #D9D9D9;
+  background: #fff;
+}
+
+.header .group-top .flex-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  height: 30px;
+}
+
+.header .group-top .player-list li {
+  position: relative;
+  padding: 0 8px 0 8px;
+}
+
+.header .group-top .player-list li+li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  content: '';
+  width: 1px;
+  height: 7px;
+  background: #ccc;
+}
+
+.header .group-top .player-list {
+  display: flex;
+  padding-left: 20px;
+}
+
+.header .group-top .myplay-item a {
+  position: relative;
+  display: inline-block;
+  padding-left: 18px;
+  color: #000;
+}
+
+.header .group-top .myplay-item a::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 13px;
+  width: 13px;
+  background-image: url(//file.bugsm.co.kr/wbugs/sprite/pc/sprite_pc_wbugs@2x.png?_t_s_=20231004-2243);
+  background-size: 56px;
+  background-position: 0px -15px;
+}
+
+.header .group-top .essent-item a {
+  display: block;
+  width: 56px;
+  height: 13px;
+  background-image: url(//file.bugsm.co.kr/wbugs/sprite/pc/sprite_pc_wbugs@2x.png?_t_s_=20231004-2243);
+  background-size: 56px;
+  background-position: 0px 0px;
+}
+
+.header .group-top .web-item a {
+  position: relative;
+  color: #ff3d33;
+  padding-left: 18px;
+}
+
+.header .group-top .web-item a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-position: -275px -464px;
+}
+
+.header .group-top .bugs-item {
+  color: #878685;
+}
+
+.header .right-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header .right-wrap .utill-box {
+  position: relative;
+  display: flex;
+}
+
+.header .right-wrap .utill-box a {
+  padding: 0 9px;
+}
+
+.header .utill-box .btn-game {
+  position: relative;
+}
+
+.header .utill-box .btn-game::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  content: '';
+  width: 1px;
+  height: 7px;
+  background: #CCC;
+}
+
+.header .utill-box .link-pmang {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 68px;
+  line-height: 34px;
+  box-shadow: 10px 10px 15px 0 rgba(7, 0, 2, 0.1);
+  border: 1px solid #c4c5c8;
+  background: #fff;
+  z-index: 1;
+}
+
+.header .utill-box .link-pmang:hover {
+  background-color: #f3f3f7;
+}
+
+.header .utill-box .btn-game::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -3px;
+  margin-top: -1px;
+  content: '';
+  width: 5px;
+  height: 4px;
+  background-position: -47px -33px;
+}
+
+.header .utill-box .link-pmang.on {
+  display: block;
+}
+
+.header .right-wrap .link-box {
+  padding: 7px 13px 0 8px;
+}
+
+.header .utill-box {
+  display: block;
+  padding: 0 6px 0 9px;
+  font-size: 12px;
+  color: #878685;
+  line-height: 31px;
+}
+
+.header .link-box .comico {
+  display: inline-block;
+  width: 63px;
+  height: 18px;
+  background-position: -194px -211px;
+}
+
+.header .link-box .ticket {
+  display: inline-block;
+  width: 55px;
+  height: 18px;
+  background-position: -484px -270px;
+}
+
+.header .link-box .hangame {
+  display: inline-block;
+  width: 71px;
+  height: 18px;
+  background-position: -270px -177px;
+}
+
+.header .info-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+.header .info-area .logo h1 {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+
+.header .info-area .logo a {
+  display: block;
+  width: 110px;
+  height: 80px;
+  background: url(https://file.bugsm.co.kr/wbugs/common/header/logo_bugs.png?_t_s_=20231005-1242) no-repeat;
+}
+
+.header .info-area .logo img {
+  width: 100%;
+}
+
+.header .info-area .inner {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 1374px;
+  margin: 0 auto;
+}
+
+.header .search-wrap {
+  margin-left: 20px;
+}
+
+.header .search-wrap fieldset {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 374px;
+  border: none;
+}
+
+.header .search-wrap .input::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 345px;
+  height: 38px;
+  background-position: 0px 0px;
+  z-index: -1;
+}
+
+.header .search-wrap input {
+  width: 307px;
+  height: 34px;
+  padding: 10px;
+  margin: 2px 0 0 9px;
+  color: #3A3635;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.header .search-wrap input::placeholder {
+  font-size: 13px;
+}
+
+.header .search-wrap .btn-clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 33px;
+  cursor: pointer;
+  padding: 9px 7px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+}
+
+.header .search-wrap .btn-clear::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 1px;
+  border-radius: 1px;
+  background-color: #bbb;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header .search-wrap .btn-clear::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 12px;
+  width: 1px;
+  border-radius: 1px;
+  background-color: #bbb;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header .search-wrap .btn-search {
+  width: 38px;
+  height: 38px;
+  background-position: -459px -347px;
+}
+
+.header .feature-wrap {
+  height: 80px;
+  padding: 3px 0 0 50px;
+}
+
+.header .feature-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .feature-wrap .btn-clear {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  right: 33px;
+  cursor: pointer;
+  padding: 9px 7px;
+  width: 9px;
+  height: 9px;
+  background: #f00;
+}
+
+/* .header .feature-wrap .btn-clear::before{
+  content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 12px;
+    border-radius: 1px;
+    background-color: blueviolet;
+} */
+
+
+.header .login-wrap {
+  display: flex;
+}
+
+.header .login-wrap .link-login {
+  display: inline-block;
+  position: relative;
+  margin-right: 6px;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.header .login-wrap .btn-notice {
+  width: 28px;
+  height: 28px;
+  background-position: -193px -424px;
+  margin-right: 20px;
+}
+
+.header .login-wrap .btn-notice:hover {
+  background-position: -225px -424px;
+}
+
+
+/* 왼쪽 메뉴영역 */
+.header .group-menu {
+  position: fixed;
+  width: 219px;
+  margin-top: 118px;
+  height: calc(100% - 118px);
+  border-right: 1px solid #D9D9D9;
+  background: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 20;
+  padding-bottom: 20px;
+}
+
+.header .group-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.header .group-menu:hover::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+}
+
+.header .group-menu:hover::-webkit-scrollbar-thumb {
+  background: #ebeff1;
+  border-radius: 3px;
+}
+
+.header .group-menu:hover::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.header .group-menu .mbs-wrap {
+  padding: 12px 0 4px;
+  margin-left: 14px;
+  border-bottom: 1px solid #efefef;
+}
+
+.header .mbs-wrap .link-mbs {
+  display: block;
+  width: 188px;
+  height: 34px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #3a3635;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #D9D9D9;
+}
+
+.header .mbs-wrap .link-mbs:hover {
+  background-color: #F2F3F7;
+}
+
+.header .mbs-wrap .link-mbs::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  margin: -2px 10px 0px 0px;
+  background-position: -543px -318px;
+}
+
+.header .mbs-wrap .token-box {
+  display: flex;
+  width: 188px;
+}
+
+.header .mbs-wrap .token-box a {
+  height: 30px;
+  line-height: 30px;
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+}
+
+.header .mbs-wrap .token-box a:first-child {
+  position: relative;
+}
+
+.header .mbs-wrap .token-box a:first-child::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  width: 1px;
+  height: 7px;
+  margin-top: -4px;
+  background: #ccc;
+}
+
+/* 왼쪽 gnb영역 */
+.header .gnb {
+  width: 190px;
+  padding: 16px 0 0 15px;
+}
+
+.header .menu-list>li {
+  padding-bottom: 13px;
+}
+
+.header .menu-list li a {
+  display: block;
+  position: relative;
+  height: 30px;
+  font-size: 15px;
+  color: #3A3635;
+  line-height: 32px;
+  text-indent: 30px;
+}
+
+.header .menu-list .chart a {
+  background-position: 0 -211px;
+}
+
+.header .menu-list .news a {
+  background-position: -349px -136px;
+}
+
+.header .menu-list .fouru a {
+  background-position: -349px 0;
+}
+
+.header .menu-list .genre a {
+  background-position: 0 -279px;
+}
+
+.header .menu-list .musicpost a {
+  background-position: -349px -34px;
+}
+
+.header .menu-list .sub-list {
+  padding-top: 7px;
+}
+
+.header .menu-list .theme {
+  padding-bottom: 13px;
+}
+
+.header .menu-list .theme span {
+  background-position: -349px -204px;
+}
+
+.header .menu-list .arrow span {
+  position: relative;
+}
+
+.header .menu-list .arrow span::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 30px);
+  height: 1px;
+  background: #eee;
+  content: '';
+}
+
+.header .menu-list .arrow span::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  content: '';
+  width: 9px;
+  height: 6px;
+  transform: scaleY(-1);
+  cursor: pointer;
+  background-position: -11px -20px;
+}
+
+.header .menu-list .arrow.on span::after {
+  transform: scaleY(1);
+}
+
+.header .menu-list .arrow.on .sub-list {
+  display: none;
+}
+
+.header .menu-list .connect a {
+  background-position: 0 -245px;
+}
+
+.header .menu-list .radio a {
+  background-position: -349px -170px;
+}
+
+.header .menu-list .bugstv span {
+  background-position: 0 -177px;
+}
+
+.header .menu-list .mymusic span {
+  background-position: -349px -102px;
+}
+
+.header .myalbum {
+  position: relative;
+}
+
+.header .myalbum .link-new {
+  display: inline-block;
+  font-size: 13px;
+  color: #757271;
+  line-height: 28px;
+  padding: 8px 0 0 32px;
+}
+
+.header .myalbum .link-all {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  font-size: 11px;
+  color: #7f7f7f;
+  line-height: 30px;
+}
+
+.footer {
+  padding: 20px 20px 19px 260px;
+}
+
+.footer .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-top: 12px;
+}
+
+.footer .fnb-list {
+  display: flex;
+
+}
+
+.footer .fnb-list li {
+  position: relative;
+  padding: 0 8px 0 9px;
+  color: #757271;
+}
+
+.footer .fnb-list li+li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 7px;
+  width: 1px;
+  margin-top: -4px;
+  background: #CCC;
+}
+
+.footer .fnb-list li strong {
+  font-weight: bold;
+  color: #FF564C;
+}
+
+.footer .content-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer .content-wrap .sns {
+  overflow: hidden;
+  margin-right: 2px;
+}
+
+.footer .sns a {
+  display: inline-block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+}
+
+.footer .sns .blog {
+  background-position: -257px -424px;
+}
+
+.footer .sns .facebook {
+  background-position: -289px -424px;
+}
+
+.footer .sns .kakaostory {
+  background-position: -321px -424px;
+}
+
+.footer .site-box {
+  position: relative;
+}
+
+.footer .site-box.on .link-select {
+  display: block;
+}
+
+.footer .site-box.on .link-select a:hover {
+  background-color: #f3f3f7;
+}
+
+.footer .site-box .btn-site {
+  position: relative;
+  width: 146px;
+  height: 26px;
+  font-size: 11px;
+  color: #757271;
+  line-height: 26px;
+  text-align: left;
+  text-indent: 10px;
+  border: 1px solid #c4c2c2;
+  border-radius: 3px;
+}
+
+.footer .site-box .btn-site::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  content: '';
+  width: 5px;
+  height: 4px;
+  background-position: -9px -42px;
+}
+
+.footer .site-box .link-select {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin-top: 1px;
+  box-shadow: 10px 10px 15px 0 rgba(7, 0, 2, 0.1);
+  border: 1px solid #c4c5c8;
+  background: #fff;
+  z-index: 15;
+}
+
+.footer .site-box .link-select a {
+  display: block;
+  position: relative;
+  padding: 0 28px 0 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #757271;
+  line-height: 34px;
+}
+
+.footer .address {
+  margin-bottom: 10px;
+}
+
+.footer .address span {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.footer .address .bar {
+  position: relative;
+  padding: 0 3px;
+  margin-left: 6px;
+}
+
+.footer .address .bar::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  width: 1px;
+  height: 8px;
+  margin-top: -5px;
+  background: #999;
+}
+
+.footer .award-list {
+  display: flex;
+}
+
+.add-wrap {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  border: 1px solid #c4c5c8;
+  box-shadow: 10px 10px 15px 0 rgba(7, 0, 2, 0.1);
+}
+
+.add-wrap.on {
+  display: block;
+}
+
+.add-wrap .add-list a:hover {
+  background: #f3f3f7;
+}
+
+.add-wrap .share {
+  position: relative;
+}
+
+.add-wrap .share::after {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translate(0, -54%);
+  content: '';
+  margin-top: -1px;
+  width: 5px;
+  height: 7px;
+  background-position: -47px -22px;
+}
+
+.add-wrap .sub-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border: 1px solid #c4c5c8;
+  box-shadow: 10px 10px 15px 0 rgba(7, 0, 2, 0.1);
+}
+
+.add-wrap .share.on .sub-list {
+  display: block;
+}
+
+.add-wrap .sub-list li a::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: -1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.add-wrap .sub-list .kakaostory a::before {
+  background-position: -60px -219px;
+}
+
+.add-wrap .sub-list .facebook a::before {
+  background-position: -20px -219px;
+}
+
+.add-wrap .sub-list .link a::before {
+  background-position: -80px -219px;
+}
+
+.add-wrap .add-list>li {
+  height: 34px;
+}
+
+.add-wrap .add-list a {
+  display: block;
+  font-size: 12px;
+  color: rgb(117, 114, 113);
+  line-height: 34px;
+  text-wrap: nowrap;
+  background: rgb(255, 255, 255);
+  padding: 0px 28px 0px 14px;
+}
+
+.top .btn-top {
+  position: fixed;
+  right: 0;
+  margin-right: 5px;
+  bottom: 80px;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  background-position: -310px -42px;
+}

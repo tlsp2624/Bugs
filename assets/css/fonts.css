@@ -1,0 +1,12 @@
+@font-face {
+  font-family: '나눔바른고딕';
+  src: url('../fonts/NanumBarunGothic.woff2') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: '나눔바른고딕';
+  src: url('../fonts/NanumBarunGothicBold.woff2') format('woff');
+  font-weight: bold;
+}
+

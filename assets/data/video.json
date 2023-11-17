@@ -1,0 +1,52 @@
+{
+  "video":[
+    {
+      "id":4,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/302/6200/620070.jpg",
+      "time":"02:58",
+      "title":"바람이 분다 (Love Effect)",
+      "artist":"온앤오프(ONF)"
+  
+    },
+    {
+      "id":5,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/224/6205/620555.jpg?version=20231022180006.0",
+      "time":"00:36",
+      "title":"이 노랠 듣고 (Teaser)",
+      "artist":"박보람"
+  
+    },
+    {
+      "id":6,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/224/6205/620505.jpg?version=20231022000003.0",
+      "time":"00:25",
+      "title":"내 남자친구에게 (To My Boyfriend) Teaser #3 RIRIKA (리리카), NAYU (나유)",
+      "artist":"아일리원(ILY:1)"
+  
+    },
+    {
+      "id":7,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/224/6205/620525.jpg?version=20231021005026.0",
+      "time":"00:30",
+      "title":"DANG! (hocus pocus) (Teaser 1)",
+      "artist":"Billlie (빌리)"
+  
+    },
+    {
+      "id":8,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/224/6204/620479.jpg?version=20231020120004.0",
+      "time":"00:40",
+      "title":"Dirty Shoes (Prod. by Benny Char) (Teaser)",
+      "artist":"Chloe Char (클로이 차)"
+  
+    },
+    {
+      "id":9,
+      "thumb":"https://image.bugsm.co.kr/mvhd/images/224/6204/620435.jpg?version=20231020064819.0",
+      "time":"00:33",
+      "title":"잠시라도 우리 (Teaser 2)",
+      "artist":"성시경"
+  
+    }
+  ]
+}
