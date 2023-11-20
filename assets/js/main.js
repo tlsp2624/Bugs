@@ -104,35 +104,6 @@ $('.sc-chart .table-item').hover(function(){
   $(this).siblings().removeClass('on');
 })
 
-
-// @post 영역
-fetch('./assets/data/post.json')
-.then(res=>res.json())
-.then(json=>{
-  data=json.post;
-
-  let html=``;
-
-  data.forEach(element => {
-    
-    html+=`<li class="post-item">
-    <a href="" class="link-info">
-      <div class="thumb-box">
-        <div class="cover"></div>
-        <img src="${element.thumb}" alt>
-      </div>
-    </a>
-    <div class="text-box">
-      <a href="" class="link-issue">${element.cate}</a>
-      <a href="" class="title">${element.title}</a>
-    </div>
-  </li>`;
- 
-  });
-
-  $('#postList').html(html);
-})
-
 // @video 영역
 fetch('./assets/data/video.json')
 .then(res=>res.json())
@@ -170,6 +141,34 @@ fetch('./assets/data/video.json')
   $('#videoList').html(html);
 })
 
+// @post 영역
+fetch('./assets/data/post.json')
+.then(res=>res.json())
+.then(json=>{
+  data=json.post;
+
+  let html=``;
+
+  data.forEach(element => {
+    
+    html+=`<li class="post-item">
+    <a href="" class="link-info">
+      <div class="thumb-box">
+        <div class="cover"></div>
+        <img src="${element.thumb}" alt>
+      </div>
+    </a>
+    <div class="text-box">
+      <a href="" class="link-issue">${element.cate}</a>
+      <a href="" class="title">${element.title}</a>
+    </div>
+  </li>`;
+ 
+  });
+
+  $('#postList').html(html);
+})
+
 // @site 영역
 $('.footer .site-box').click(function(){
   $(this).toggleClass('on');  
@@ -191,7 +190,6 @@ $(document).on('click','.btn-down',function(){
     top:$(this).offset().top+h
   })
 })
-
 
 
 // @add-wrap 공유하기 호버
